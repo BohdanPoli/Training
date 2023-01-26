@@ -65,6 +65,7 @@ const CounterPlugin = function ({
   this._step = step;
   this._refs = this._gerRefs(rootSelector);
   this._bindEvents();
+  this._updateValueUI();
 };
 
 // Прототип конструктора і додавання методів
