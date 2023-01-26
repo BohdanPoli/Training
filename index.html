@@ -4,15 +4,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link 
+    <link rel="stylesheet" href="/common.css" />
+
     <title>Training</title>
   </head>
   <body>
-    <p>Value from localStorage: <span id="output"></span></p>
-    <form id="message-form">
-      <input type="text" class="input" name="message" />
-      <button type="submit" class="btn">Save</button>
-    </form>
+    <div id="counter1">
+      <button data-decrement type="button">-</button>
+      <span data-value>0</span>
+      <button data-increment type="button">+</button>
+    </div>
+
+    <div id="counter2">
+      <button data-decrement type="button">-</button>
+      <span data-value>0</span>
+      <button data-increment type="button">+</button>
+    </div>
+
+    <div id="counter3">
+      <button data-decrement type="button">-</button>
+      <span data-value>0</span>
+      <button data-increment type="button">+</button>
+    </div>
+
     <script src="/index.js" type="module"></script>
   </body>
 </html>
