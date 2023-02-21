@@ -1,65 +1,77 @@
-class User {
-  static sayHello() {
-    console.log("Hi");
-  }
+// class User {
+//   static sayHello() {
+//     console.log("Hi");
+//   }
 
-  sayGoodBye() {
-    console.log("Bye");
-  }
+//   sayGoodBye() {
+//     console.log("Bye");
+//   }
 
-  constructor({ email = "standard", password = "standard" } = {}) {
-    this._email = email;
-    this.password = password;
-  }
+//   character = "personal";
 
-  get email() {
-    return this._email;
-  }
+//   constructor({ email = "standard", password = "standard" } = {}) {
+//     this._email = email;
+//     this.password = password;
+//   }
 
-  set email(newEmail) {
-    this._email = newEmail;
-  }
-}
+//   get email() {
+//     return this._email;
+//   }
 
-const newUser = new User({ email: "123@gmail", password: "12312" });
+//   set email(newEmail) {
+//     this._email = newEmail;
+//   }
+// }
 
-class SuperUser extends User {
-  constructor({ nick, email, password } = {}) {
-    super({ email, password });
+// const newUser = new User({ email: "123@gmail", password: "12312" });
 
-    this._nick = nick;
-  }
-}
+// console.dir(User);
+// console.log(newUser);
 
-const superI = new SuperUser({
-  email: "LALA@@@SUPER",
-  password: "Without",
-  nick: "Ball",
-});
+// class SuperUser extends User {
+//   constructor({ nick, email, password } = {}) {
+//     super({ email, password });
 
-class SuperPix extends SuperUser {
-  constructor({ slogan, ...restProps } = {}) {
-    super(restProps);
+//     this._nick = nick;
+//   }
+// }
 
-    this._slogan = slogan;
-  }
+// const superI = new SuperUser({
+//   email: "LALA@@@SUPER",
+//   password: "Without",
+//   nick: "Ball",
+// });
 
-  get slogan() {
-    return this._slogan;
-  }
-}
+// class SuperPix extends SuperUser {
+//   constructor({ slogan, ...restProps } = {}) {
+//     super(restProps);
 
-const superIo = new SuperPix({
-  slogan: "play all time",
-  email: "super@123",
-  password: "12312",
-  nick: "Dad",
-});
+//     this._slogan = slogan;
+//   }
 
-console.log(newUser);
-console.log(superI);
-console.log(superIo);
+//   get slogan() {
+//     return this._slogan;
+//   }
+// }
 
-console.log(superIo.email);
+// const superIo = new SuperPix({
+//   slogan: "play all time",
+//   email: "super@123",
+//   password: "12312",
+//   nick: "Dad",
+// });
 
-console.log(parseInt("I1"));
+// let arr = [1, 2, 3, 4, 5];
+// arr.reverse();
+
+// console.log(arr);
+
+// window.alert(arr);
+// let name = window.prompt("Яке ваше ім'я ?");
+// console.log(name);
+
+// console.log(window.confirm("ти нормальний ? "));
+
+const train = document.querySelector(".train");
+
+console.log(train.nextElementSibling);
